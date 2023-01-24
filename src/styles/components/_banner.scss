@@ -1,0 +1,18 @@
+.banner {
+   text-align: center;
+    vertical-align: middle;
+    .banner__img {
+
+        border-radius: 25px;
+        object-fit: cover;
+        width: 88%;
+        height: 223px;
+        z-index: 0;
+        filter:brightness(70%);
+    }
+    .banner__text {
+        font-size: 48px;
+        font-weight: 500;
+        align-items: middle;
+    }
+}
