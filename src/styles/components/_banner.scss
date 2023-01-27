@@ -9,9 +9,18 @@
     border-radius: 25px;
     background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/banner1.png);
     }
-    
+
+   
     .banner__text {
         font-size: 48px;
         color: white;
+    }
+
+    .aboutBanner__contend {
+        background-size:cover;
+        height: 223px;
+        width: 100%;
+        border-radius: 25px;
+        background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/banner2.png);
     }
 

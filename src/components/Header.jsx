@@ -26,7 +26,3 @@ function Header() {
 }
 
 export default Header
-
-
-/*<li><NavLink className='nav__a' to="/">Accueil</Link></li>
-                            <li><NavLink className='nav__a' to="/about">A Propos</Link></li>*/

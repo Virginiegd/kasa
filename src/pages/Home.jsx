@@ -1,14 +1,16 @@
 import Header from '../components/Header'
 import Footer from '../components/Footer';
-import Banner from '../components/Banner'
+import HomeBanner from '../components/HomeBanner'
 import Card from '../components/Card'
 
 function Home() {
   return (
     <div>
       <Header />
-      <Banner />
-      <Card />
+      <main>
+        <HomeBanner />
+        <Card />
+      </main>
       <Footer />
 
     </div>
