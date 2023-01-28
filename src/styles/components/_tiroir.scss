@@ -1,6 +1,7 @@
 .tiroir__contend {
     margin: 25px 108px 0px 108px;
 
+
 .header {
     background: $color-primary;
     display: flex;
@@ -16,7 +17,6 @@
 }
 
 .text {
-    
     p {
     background: #F6F6F6;
     color:$color-primary;
@@ -26,6 +26,12 @@
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px ;
    
+    }
+}
+
+.text-off {
+    p {
+        display: none;
     }
 }
 }
