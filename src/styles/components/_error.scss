@@ -1,0 +1,25 @@
+.error__contend {
+    color: $color-primary;
+    text-align: center;
+
+    h1 {
+        font-size: 288px;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    p {
+        font-size: 38px;
+        font-weight: 500;
+        margin-top: 0px;
+        margin-bottom: 100px;
+    }
+
+    .lien {
+        color: $color-primary;
+        text-decoration: underline;
+        font-weight: 500;
+        margin-top: 100px;
+    }
+
+}

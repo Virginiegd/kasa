@@ -12,7 +12,6 @@ function Home() {
         <Card />
       </main>
       <Footer />
-
     </div>
   );
 }

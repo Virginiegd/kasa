@@ -12,11 +12,13 @@ body {
 }
 
 .container {
-  margin: 0px 100px;
+  padding: 0px 100px;
+  max-width: 1440px;
 }
 
 .container--footer {
-  margin:0;
+  padding: 0px 0px;
+  max-width: 1440px;
 }
 
 a {
@@ -38,3 +40,4 @@ img {
 
 // Variables couleurs
 $color-primary:#FF6060;
+$color-secondary:#F7F7F7;

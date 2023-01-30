@@ -1,14 +1,16 @@
 import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Error from '../components/Error'
 
-function Error() {
+function Error404() {
+ 
   return (
     <div>
       <Header />
-      <h1> Erreur </h1>
-      <Footer />
+      <main>
+        <Error />
+      </main>
     </div>
-  );
+  )
 }
 
-export default Error;
+export default Error404;
