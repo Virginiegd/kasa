@@ -7,15 +7,15 @@ const Accordion = ({ heading, content }) => {
   const element = <FontAwesomeIcon icon={faAngleDown} />
 
   return (
-    
-    <section className="container">
-      <ul>
+
+    <section>
+      <ul className="container">
         <li className='accordion__contend'>
-          <div className="header" onClick={() => setIsActive(!isActive)}>
+          <div className="accordion__heading" onClick={() => setIsActive(!isActive)}>
             <h2>{heading}</h2>
-            <span>{isActive ? <button className="buttonOpen" >{element}</button> : <button className="buttonClose">{element}</button>}</span>
+            <span>{isActive ? <button className="header__buttonOpen" >{element}</button> : <button className="heading__buttonClose">{element}</button>}</span>
           </div>
-          {isActive && <div className="text">{content}</div>}
+          {isActive && <div className="accordion__content">{content}</div>}
         </li>
       </ul>
     </section>

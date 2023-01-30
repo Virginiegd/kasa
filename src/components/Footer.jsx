@@ -1,8 +1,8 @@
 import white__logo from '../assets/white__logo.png'
 
 function Footer() {
-    const cop= "© 2020 Kasa. All rights reserved";
-    return(
+    const cop = "© 2020 Kasa. All rights reserved";
+    return (
         <footer>
             <div className='container--footer'>
                 <div className='footer__contend'>

@@ -1,7 +1,9 @@
 function AboutBanner() {
-    return(
-        <section className='container'>
-        <div className='aboutBanner__contend'></div>
+    return (
+        <section>
+            <div className='container'>
+                <div className='aboutBanner__contend'></div>
+            </div>
         </section>
     )
 }

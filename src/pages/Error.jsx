@@ -1,8 +1,8 @@
-import Header from '../components/Header';
+import Header from '../components/Header'
 import Error from '../components/Error'
 
 function Error404() {
- 
+
   return (
     <div>
       <Header />
@@ -13,4 +13,4 @@ function Error404() {
   )
 }
 
-export default Error404;
+export default Error404

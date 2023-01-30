@@ -1,14 +1,16 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
+import Header from '../components/Header'
+import Footer from '../components/Footer'
 
 function Appartment() {
   return (
     <div>
       <Header />
-      <h1> Erreur </h1>
+      <main>
+        <h1> Appartment </h1>
+      </main>
       <Footer />
     </div>
   );
 }
 
-export default Appartment;
+export default Appartment

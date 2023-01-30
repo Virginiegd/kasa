@@ -1,7 +1,7 @@
-import Header from '../components/Header';
-import Footer from '../components/Footer';
-import AboutBanner from '../components/AboutBanner';
-import Tiroir from '../components/Tiroir'
+import Header from '../components/Header'
+import Footer from '../components/Footer'
+import AboutBanner from '../components/AboutBanner'
+import AboutAccordion from '../components/AboutAccordion'
 
 function About() {
   return (
@@ -9,11 +9,11 @@ function About() {
       <Header />
       <main>
         <AboutBanner />
-        <Tiroir />
+        <AboutAccordion />
       </main>
       <Footer />
     </div>
-  );
+  )
 }
 
 export default About

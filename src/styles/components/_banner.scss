@@ -1,26 +1,25 @@
-
-    .banner__contend {
+// Banner page Home
+.banner__contend {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size:cover;
+    background-size: cover;
     height: 223px;
     width: 100%;
     border-radius: 25px;
-    background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/banner1.png);
-    }
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/banner1.png);
 
-   
-    .banner__text {
+    h1 {
         font-size: 48px;
         color: white;
     }
+}
 
-    .aboutBanner__contend {
-        background-size:cover;
-        height: 223px;
-        width: 100%;
-        border-radius: 25px;
-        background-image:  linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/banner2.png);
-    }
-
+// Banner page About
+.aboutBanner__contend {
+    background-size: cover;
+    height: 223px;
+    width: 100%;
+    border-radius: 25px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/banner2.png);
+}
