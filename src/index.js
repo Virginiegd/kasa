@@ -12,10 +12,10 @@ root.render(
   <React.StrictMode>
     <BrowserRouter>
       <Routes>
-        < Route path="/" element={<Home />} />
-        < Route path="/about" element={<About />} />
-        < Route path="/appartment" element={<Appartment />} /> {/* à préciser */}
+        < Route exact path="/" element={<Home />} />
         < Route path="*" element={<Error404 />} />
+        < Route path="/about" element={<About />} />
+        < Route path="/appartment/:id" element={<Appartment />} /> 
       </Routes>
     </BrowserRouter>
   </React.StrictMode>

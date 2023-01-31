@@ -23,3 +23,34 @@
     }
 
 }
+
+// Tablette 
+
+@media screen and (max-width: 1140px) {
+    .error__contend {
+        h1 {
+            font-size: 126px;
+        }
+
+        p {
+            font-size: 26px;
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width:768px) {
+    .error__contend {
+        h1 {
+            font-size: 96px;
+        }
+
+        p {
+            font-size: 18px;
+        }
+
+        .error__lien {
+            font-size: 14px;
+        }
+    }
+}

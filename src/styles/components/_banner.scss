@@ -12,6 +12,7 @@
     h1 {
         font-size: 48px;
         color: white;
+        font-weight: 500;
     }
 }
 
@@ -22,4 +23,39 @@
     width: 100%;
     border-radius: 25px;
     background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/banner2.png);
+}
+
+
+// Tablette 
+
+@media screen and (max-width: 1140px) {
+    .banner__contend {
+        height: 150px;
+        border-radius: 25px;
+
+        h1 {
+            font-size: 32px;
+        }
+    }
+}
+
+// Mobile
+
+@media screen and (max-width:658px) {
+    .banner__contend {
+        height: 111px;
+        border-radius: 10px;
+
+        h1 {
+            margin: 0px 80px 0px 16px;
+            font-size: 24px;
+        }
+    }
+
+    // Banner page About
+.aboutBanner__contend {
+   
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)), url(../../assets/banner3.png);
+    height: 223px;
+}
 }

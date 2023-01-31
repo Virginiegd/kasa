@@ -40,3 +40,40 @@
 
     }
 }
+
+
+// Tablette 
+
+@media screen and (max-width: 1140px) {
+    .accordion__contend {
+        margin: 25px 50px 25px 50px;
+        .accordion__heading {
+            h2 {
+                font-size: 18px;
+            }
+        }
+        .accordion__content {
+            font-size: 17px;
+        }
+    }
+}
+
+
+// Mobile
+
+@media screen and (max-width:658px) {
+
+    .accordion__contend {
+        margin: 25px 0px 25px 0px;
+        .accordion__heading {
+            h2 {
+                font-size: 13px;
+            }
+        }
+        .accordion__content {
+            font-size: 12px;
+        }
+    }
+  
+}
+

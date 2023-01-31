@@ -8,9 +8,40 @@ footer {
         text-align: center;
         height: 209px;
         width: 100%;
+
+        p {
+            font-size: 24px;
+        }
     }
 
     .footer__logo {
         width: 122px;
+        height: 39px;
+    }
+}
+
+// Tablette 
+
+@media screen and (max-width: 1140px) {
+    footer {
+        .footer__contend {
+            p {
+                font-size: 16px;
+            }
+        }
+    }
+
+}
+
+
+// Mobile
+
+@media screen and (max-width:658px) {
+    footer {
+        .footer__contend {
+            p {
+                font-size: 12px;
+            }
+        }
     }
 }

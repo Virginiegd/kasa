@@ -3,13 +3,13 @@ import Accordion from './Accordion'
 
 function AboutAccordion() {
   return (
-    <div>
-      <ul>
-        {listAbout.map(({ id, heading, content }) => (
-          <Accordion key={id} heading={heading} content={content} />
-        ))}
+    <section>
+      <ul className="container">
+          {listAbout.map(({ id, heading, content }) => (
+            <Accordion key={id} heading={heading} content={content} />
+          ))}
       </ul>
-    </div>
+    </section>
   )
 }
 

@@ -37,7 +37,25 @@ img {
   height: auto;
 }
 
-
 // Variables couleurs
 $color-primary:#FF6060;
 $color-secondary:#F7F7F7;
+
+
+// Tablette 
+
+@media screen and (max-width: 1140px) {
+    
+ .container {
+  padding: 0px 40px;
+ }
+}
+
+// Mobile
+
+@media screen and (max-width:658px) {
+
+  .container {
+    padding: 0px 20px;
+  }
+}
