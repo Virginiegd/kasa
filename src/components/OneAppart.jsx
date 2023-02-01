@@ -1,21 +1,12 @@
-import { useParams } from 'react-router-dom'
-import appartList from '../datas/logements.json'
-
-function OneAppart() {
-    const { id } = useParams()
-    const appart = appartList.find((appart) => appart.id === id);
-
+function OneAppart(props) {
     return (
         <section>
             <div className='container'>
-                <h1>{appart.title}</h1>
-                <p>{appart.description}</p>
-                <p>{appart.equipments}</p>
+            <h1>{props.appartId.title}</h1>
             </div>
         </section> 
 
         )
-    
 }
 
 export default OneAppart

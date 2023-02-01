@@ -13,9 +13,9 @@ root.render(
     <BrowserRouter>
       <Routes>
         < Route exact path="/" element={<Home />} />
-        < Route path="*" element={<Error404 />} />
         < Route path="/about" element={<About />} />
         < Route path="/appartment/:id" element={<Appartment />} /> 
+        < Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>
   </React.StrictMode>
