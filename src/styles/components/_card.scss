@@ -12,6 +12,8 @@
         margin-bottom: 40px;
         position: relative;
 
+        a {
+            display: block;
         img {
             object-fit: cover;
             width: 100%;
@@ -29,6 +31,7 @@
             padding: 15px;
             color: white;
         }
+    }
     }
 
 }

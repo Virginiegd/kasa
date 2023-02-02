@@ -7,12 +7,12 @@ function Card() {
       <div className='container'>
         <ul className='card__appart'>
           {appartList.map((appart) => (
-            <NavLink to={`/appartment/${appart.id}` } className='card__appart1' key={appart.id}>
-              <li>
+              <li className='card__appart1' key={appart.id}>
+                <NavLink to={`/appartment/${appart.id}` }>
                 <img src={appart.cover} alt="logement" />
                 <h2>{appart.title}</h2>
+                </NavLink>
               </li>
-            </NavLink>
           ))}
         </ul>
       </div>

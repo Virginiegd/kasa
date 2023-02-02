@@ -9,7 +9,7 @@
         padding: 0px 10px 0px 10px;
         border-radius: 5px;
 
-        h2 {
+        .heading {
             font-size: 24px;
             margin: 0;
             color: white;
@@ -48,7 +48,7 @@
     .accordion__contend {
         margin: 25px 50px 25px 50px;
         .accordion__heading {
-            h2 {
+            .heading {
                 font-size: 18px;
             }
         }
@@ -66,7 +66,7 @@
     .accordion__contend {
         margin: 25px 0px 25px 0px;
         .accordion__heading {
-            h2 {
+            .heading {
                 font-size: 13px;
             }
         }
