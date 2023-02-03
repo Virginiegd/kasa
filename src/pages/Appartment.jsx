@@ -4,6 +4,7 @@ import { useParams } from 'react-router-dom'
 import appartList from '../datas/logements.json'
 import Error404 from './Error'
 import AppartSlider from '../components/AppartSlider'
+import AppartInformation from '../components/AppartInformation'
 
 function Appartment() {
   const { id } = useParams()
@@ -15,6 +16,7 @@ function Appartment() {
         <Header />
         <main>
           <AppartSlider appartId={appart}/>
+          <AppartInformation appartId={appart}/>
         </main>
         <Footer />
       </div>
@@ -30,5 +32,3 @@ function Appartment() {
 }
 
 export default Appartment
-
-// <h1>{props.appartId.title}</h1>
