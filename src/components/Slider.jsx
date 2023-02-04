@@ -20,6 +20,16 @@ const prevImg = () => {
     const newIndex = isLastSlide ? 0 : currentIndex + 1
     setCurrentIndex(newIndex)
 }
+if (slides.length === 1) {
+    return(
+        <div className='container__slider'>
+            {slides[currentIndex]}
+            <div className='slider__counter'>
+                <p>{currentIndex + 1}/{slides.length}</p>
+            </div>
+        </div>
+    )
+} else {
     return(
         <div className='container__slider'>
             {slides[currentIndex]}
@@ -30,6 +40,7 @@ const prevImg = () => {
             </div>
         </div>
     )
+}
 }
 
 

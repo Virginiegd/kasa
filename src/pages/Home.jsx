@@ -3,6 +3,8 @@ import Footer from '../components/Footer'
 import HomeBanner from '../components/HomeBanner'
 import Card from '../components/Card'
 
+// Page d'accueil
+
 function Home() {
   return (
     <div>

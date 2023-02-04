@@ -7,6 +7,8 @@ import About from './pages/About'
 import Error404 from './pages/Error'
 import Appartment from './pages/Appartment'
 
+// Création des routes
+
 const root = ReactDOM.createRoot(document.getElementById('root'))
 root.render(
   <React.StrictMode>
@@ -14,6 +16,7 @@ root.render(
       <Routes>
         < Route exact path="/" element={<Home />} />
         < Route path="/about" element={<About />} />
+        {/*/:id permettra par la suite de récupérer directement l'id de l'appartement*/}
         < Route path="/appartment/:id" element={<Appartment />} /> 
         < Route path="*" element={<Error404 />} />
       </Routes>
