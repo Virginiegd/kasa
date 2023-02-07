@@ -4,7 +4,7 @@ import './styles/index.scss'
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import Home from './pages/Home'
 import About from './pages/About'
-import Error404 from './pages/Error'
+import Error404 from './pages/Error404'
 import Appartment from './pages/Appartment'
 
 // Création des routes

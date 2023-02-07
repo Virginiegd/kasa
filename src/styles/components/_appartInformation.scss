@@ -1,3 +1,5 @@
+// Information appartement
+
 .appart__container {
     .info__container {
         display: flex;
@@ -11,14 +13,13 @@
                 margin-top: 0px;
                 font-size: 36px;
                 color: $color-primary;
-                font-weight: 500;
+                font-weight: $font-500;
                 margin-bottom: 0;
-
             }
 
             p {
                 color: $color-primary;
-                font-weight: 500;
+                font-weight: $font-500;
                 margin-top: 0;
             }
 
@@ -27,105 +28,146 @@
 
                 li {
                     color: $color-secondary;
-                    font-weight: 500;
+                    font-weight: $font-500;
                     margin-top: 0;
                     background-color: $color-primary;
                     padding: 5px 10px;
                     border-radius: 10px;
                     margin-right: 15px;
                     font-size: 14px;
-
                 }
             }
         }
 
-            .appart__owner {
-                
-                    .appart__plus {
-                        display: flex;
-                        p {
-                            margin-bottom: 0px;
-                            width: min-content;
-                            margin-right: 10px;
-                            text-align: right;
-                            margin-right: 20px;
-                            padding-left: 25px;
-                        }
-                    
-                        div {
-                        img {
-                            border-radius: 65px;
-                            height: 64px;
-                            margin-top: 10px;
-                        }
-                        }
+        .appart__owner {
+            align-items: center;
+
+            .appart__plus {
+                display: flex;
+
+                p {
+                    margin-bottom: 0px;
+                    width: min-content;
+                    text-align: right;
+                    margin-right: 20px;
+                    padding-left: 25px;
+                    color: $color-primary;
+                    font-weight: $font-500;
+                }
+
+                div {
+                    img {
+                        border-radius: 65px;
+                        height: 64px;
+                        margin-top: 10px;
                     }
+                }
             }
         }
     }
 
     .appart__description {
-        display: flex;
-        justify-content: space-between;
-
         ul {
-            width: 45%;
+            display: flex;
+            justify-content: space-between;
 
-            li {
+            .accordion__contend {
                 margin: 25px 0px 25px 0px;
+                width: 45%;
 
                 .heading {
                     font-size: 18px;
                 }
 
-                div {
+                .accordion__content {
                     font-size: 18px;
-                    font-weight: 400;
+                    margin-top: 0px;
+                    p {
+                        margin:0px;
+                    }
                 }
-
-                p {
-                    margin: 0;
-                    font-size: 18px;
-                    font-weight: 400;
-                }
-
             }
         }
     }
+}
 
 
 // Mobile
-@media screen and (max-width:658px) {
+@media screen and (max-width:768px) {
     .appart__container {
-        .appart__info {
-            h1 {
-                font-size: 18px;
+        .info__container {
+            flex-direction: column;
+
+            .appart__info {
+                flex-direction: column;
+
+                h1 {
+                    font-size: 18px;
+                }
+
+                p {
+                    font-size: 14px;
+                }
+
+                .appart__tag {
+
+                    li {
+                        font-size: 10px;
+                    }
+                }
+            }
+
+            .appart__owner {
+                display: flex;
+                flex-direction: row-reverse;
+                justify-content: space-between;
+                padding-top: 20px;
+
+                .appart__plus {
+                    display: flex;
+
+                    p {
+                        margin-bottom: 0px;
+                        width: min-content;
+                        text-align: right;
+                        margin-right: 20px;
+                        padding-left: 25px;
+                        font-size: 12px;
+                    }
+
+                    div {
+                        img {
+                            border-radius: 65px;
+                            height: 32px;
+                            margin-top: 10px;
+                        }
+                    }
+                }
             }
         }
 
-
-        p {
-            font-size: 14px;
-        }
-
-        .appart__bonus {
-            display: flex;
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: flex-start;
-
-        }
 
         .appart__description {
-            display: flex;
-            flex-direction: column;
-
-
             ul {
-                width: 100%;
+
+                flex-direction: column;
+
+                .accordion__contend {
+                    margin: 10px 0px 10px 0px;
+                    width: 100%;
+
+                    .accordion__heading {
+                        .heading {
+                            font-size: 13px;
+                        }
+                    }
+
+                    .accordion__content {
+                        font-size: 12px;
+
+                    }
+                }
             }
-
-
         }
     }
 }

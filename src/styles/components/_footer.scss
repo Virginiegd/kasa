@@ -1,9 +1,11 @@
+// Footer
+
 footer {
     width: 100%;
 
     .footer__contend {
         background-color: black;
-        color: white;
+        color: $color-tertiary;
         padding: 66px 0px 20px 0px;
         text-align: center;
         height: 209px;
@@ -21,8 +23,7 @@ footer {
 }
 
 // Tablette 
-
-@media screen and (max-width: 1140px) {
+@media screen and (max-width: 1236px) {
     footer {
         .footer__contend {
             p {
@@ -33,10 +34,8 @@ footer {
 
 }
 
-
 // Mobile
-
-@media screen and (max-width:658px) {
+@media screen and (max-width:768px) {
     footer {
         .footer__contend {
             p {

@@ -1,6 +1,8 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 
+// Composant Rate
+
 const Rate = ({rating}) => {
     const element = <FontAwesomeIcon icon={faStar} />
     const stars= [1, 2, 3, 4, 5]
@@ -14,7 +16,6 @@ const Rate = ({rating}) => {
             )
             )}
         </div>
-        
     )
 }
 

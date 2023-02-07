@@ -1,5 +1,7 @@
 import white__logo from '../assets/white__logo.png'
 
+// Footer
+
 function Footer() {
     const cop = "© 2020 Kasa. All rights reserved";
     return (

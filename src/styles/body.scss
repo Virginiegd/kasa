@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700&display=swap');
 
 * {
   box-sizing: border-box;
@@ -42,20 +42,32 @@ img {
 // Variables couleurs
 $color-primary:#FF6060;
 $color-secondary:#F7F7F7;
+$color-tertiary:white;
+
+// Variables autres
+$font-500:500;
+
+// Extensions
+.banner {
+  align-items: center;
+  background-size: cover;
+  height: 223px;
+  width: 100%;
+  border-radius: 25px;
+}
 
 
 // Tablette 
 
-@media screen and (max-width: 1140px) {
-    
+@media screen and (max-width: 1236px) {
  .container {
-  padding: 0px 40px;
+  padding: 0px 20px;
  }
 }
 
 // Mobile
 
-@media screen and (max-width:658px) {
+@media screen and (max-width:768px) {
 
   .container {
     padding: 0px 20px;

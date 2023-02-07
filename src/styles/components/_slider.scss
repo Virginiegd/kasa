@@ -1,42 +1,65 @@
-.container__slider{
+// Slider (carrousel)
+
+.container__slider {
     width: 100%;
     position: relative;
     height: 415px;
 
-    .leftArrowStyles{
+    .leftArrowStyles {
         position: absolute;
         top: 50%;
         transform: translate(0, -50%);
-        left:32px;
-        font-size: 45px;
-        color: white;
+        left: 32px;
+        color: $color-tertiary;
         z-index: 1;
         cursor: pointer;
     }
 
-    .rightArrowStyles{
-        position:absolute;
-        top:50%;
-        transform:translate(0, -50%);
-        right:32px;
-        font-size:45px;
-        color:white;
+    .rightArrowStyles {
+        position: absolute;
+        top: 50%;
+        transform: translate(0, -50%);
+        right: 32px;
+        color: $color-tertiary;
         z-Index: 1;
-        cursor:pointer;
+        cursor: pointer;
     }
 
     .slider__counter {
-        position:absolute;
+        position: absolute;
         bottom: 0%;
         width: 100%;
-           
+
         p {
-            color: white;
+            color: $color-tertiary;
             text-align: center;
-            font-weight: 500;
-            
+            font-weight: $font-500;
         }
-        
-        
+    }
+}
+
+// Tablette
+@media screen and (max-width:1236px) {
+    .container__slider {
+        height: 255px;
+        .leftArrowStyles {
+            height: 19px;
+            width: 12px;
+        }
+
+        .rightArrowStyles {
+            height: 19px;
+            width: 12px;
+        }
+    }
+}
+
+// Mobile
+@media screen and (max-width:768px) {
+
+    .container__slider {
+        .slider__counter {
+            display: none;
+        }
     }
 }

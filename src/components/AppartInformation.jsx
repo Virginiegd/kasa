@@ -33,8 +33,6 @@ function AppartInformation(props) {
                     <div className="appart__description">
                         <ul>
                             <Accordion heading="Description" content={props.appartId.description} />
-                        </ul>
-                        <ul>
                             <Accordion heading="Equipements" content={props.appartId.equipments.map((description) => (
                                 <p key={description}>
                                     {description}

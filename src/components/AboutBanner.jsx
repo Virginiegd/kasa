@@ -1,3 +1,5 @@
+// Bannière de la page A props
+
 function AboutBanner() {
     return (
         <section>

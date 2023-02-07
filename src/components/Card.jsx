@@ -1,18 +1,21 @@
 import appartList from '../datas/logements.json'
-import { NavLink } from 'react-router-dom'
+import { Link } from 'react-router-dom'
+
+// Card Appartement
 
 function Card() {
   return (
     <section>
       <div className='container'>
         <ul className='card__appart'>
+          {/*.map permet de récupérer les éléments voulus du fichier json */}
           {appartList.map((appart) => (
-              <li className='card__appart1' key={appart.id}>
-                <NavLink to={`/appartment/${appart.id}` }>
-                <img src={appart.cover} alt="logement" />
+            <li className='card__appart1' key={appart.id}>
+              <Link to={`/appartment/${appart.id}`}>
+                <img src={appart.cover} alt="appartement" title="Cliquez ici pour plus d'informations" />
                 <h2>{appart.title}</h2>
-                </NavLink>
-              </li>
+              </Link>
+            </li>
           ))}
         </ul>
       </div>

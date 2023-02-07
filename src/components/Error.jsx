@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom"
 
+// Contenu de la page Error404
+
 function ErrorPage() {
     const error = "Oups ! La page que vous demandez n'existe pas."
     const returned = "Retourner sur la page d'accueil"

@@ -10,3 +10,18 @@
     font-size: 30px;
 };
 }
+
+
+// Mobile
+@media screen and (max-width:768px) {
+    .star__container {
+        margin: 10px 0px 0px 0px;
+        .color {
+            font-size: 15px;
+        }
+        .grey {
+            color:#E3E3E3;
+            font-size: 15px;
+        };
+    }
+}

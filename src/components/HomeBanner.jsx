@@ -1,3 +1,5 @@
+// Banner page Home
+
 function HomeBanner() {
     const banner_text = "Chez vous, partout et ailleurs"
 

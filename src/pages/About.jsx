@@ -3,6 +3,8 @@ import Footer from '../components/Footer'
 import AboutBanner from '../components/AboutBanner'
 import AboutAccordion from '../components/AboutAccordion'
 
+// Page A propos
+
 function About() {
   return (
     <div>

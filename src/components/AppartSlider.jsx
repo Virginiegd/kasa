@@ -1,7 +1,8 @@
 import Slider from "./Slider";
 
-function AppartSlider(props) {
+// Slider Appartement (carrousel)
 
+function AppartSlider(props) {
 
     return (
         <section>

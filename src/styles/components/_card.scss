@@ -1,3 +1,4 @@
+// Card appartement 
 .card__appart {
     background-color: $color-secondary;
     border-radius: 25px;
@@ -14,55 +15,54 @@
 
         a {
             display: block;
-        img {
-            object-fit: cover;
-            width: 100%;
-            border-radius: 10px;
-            height: 340px;
-            position: relative;
-            filter: brightness(70%);
-        }
 
-        h2 {
-            margin: 0px;
-            font-size: 18px;
-            position: absolute;
-            bottom: 0px;
-            padding: 15px;
-            color: white;
+            img {
+                object-fit: cover;
+                width: 100%;
+                border-radius: 10px;
+                height: 340px;
+                position: relative;
+                filter: brightness(70%);
+            }
+
+            h2 {
+                margin: 0px;
+                font-size: 18px;
+                position: absolute;
+                bottom: 0px;
+                padding: 15px;
+                color: $color-tertiary;
+            }
         }
-    }
     }
 
 }
 
 // Tablette 
-
-@media screen and (max-width: 1140px) {
-    
+@media screen and (max-width: 1236px) {
     .card__appart {
+        margin: 25px 0px 25px 0px;
+        padding: 56px 25px 0px 25px;
         .card__appart1 {
-            width: 45%;
+            width: 48%;
         }
     }
 }
 
 // Mobile
-
-@media screen and (max-width:658px) {
-
+@media screen and (max-width:768px) {
     .card__appart {
-        background-color: white;
+        background-color: $color-tertiary;
         display: flex;
         flex-direction: column;
         align-items: center;
         margin: 0px;
         padding: 25px 0px 0px 0px;
-    
+
         .card__appart1 {
             width: 100%;
             margin-bottom: 20px;
+        }
     }
-}
 
 }
