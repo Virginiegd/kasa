@@ -7,11 +7,11 @@ function AboutAccordion() {
   return (
     <section>
       <div className="container">
-      <ul>
+        <ul>
           {listAbout.map(({ id, heading, content }) => (
             <Accordion key={id} heading={heading} content={content} />
           ))}
-      </ul>
+        </ul>
       </div>
     </section>
   )
