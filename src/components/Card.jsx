@@ -4,11 +4,12 @@ import { Link } from 'react-router-dom'
 // Card Appartement
 
 function Card() {
+
   return (
     <section>
       <div className='container'>
         <ul className='card__appart'>
-          {/*.map permet de récupérer les éléments voulus du fichier json */}
+          {/*.map permet de récupérer les éléments voulus du fichier json*/}
           {appartList.map((appart) => (
             <li className='card__appart1' key={appart.id}>
               <Link to={`/appartment/${appart.id}`}>
