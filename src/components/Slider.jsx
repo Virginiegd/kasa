@@ -6,7 +6,7 @@ import { useState } from 'react'
 
 function Slider({ slides }) {
     const [currentIndex, setCurrentIndex] = useState(0)
-    
+
     /**Si première image -> dernière image
      * Si autre image -> image en court -1 */
     const prevImg = () => {
@@ -44,7 +44,6 @@ function Slider({ slides }) {
         )
     }
 }
-
 
 export default Slider
 

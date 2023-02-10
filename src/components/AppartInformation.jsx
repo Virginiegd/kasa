@@ -20,7 +20,6 @@ function AppartInformation(props) {
                             </ul>
                         </div>
 
-
                         <div className='appart__owner'>
                             <div className="appart__plus">
                                 <p>{props.appartId.host.name}</p>
@@ -30,6 +29,7 @@ function AppartInformation(props) {
 
                         </div>
                     </div>
+
                     <div className="appart__description">
                         <ul>
                             <Accordion heading="Description" content={props.appartId.description} />
@@ -41,6 +41,7 @@ function AppartInformation(props) {
                         </ul>
                     </div>
                 </div>
+
             </div>
         </section>
     )

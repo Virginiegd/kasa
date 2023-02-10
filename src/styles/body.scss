@@ -25,7 +25,7 @@ body {
 
 a {
   text-decoration: none;
-  color : black;
+  color: black;
 }
 
 ul {
@@ -40,12 +40,12 @@ img {
 }
 
 // Variables couleurs
-$color-primary:#FF6060;
-$color-secondary:#F7F7F7;
-$color-tertiary:white;
+$color-primary: #FF6060;
+$color-secondary: #F7F7F7;
+$color-tertiary: white;
 
 // Variables autres
-$font-500:500;
+$font-500: 500;
 
 // Extensions
 .banner {
@@ -60,10 +60,10 @@ $font-500:500;
 // Tablette 
 
 @media screen and (max-width: 1236px) {
-  
- .container {
-  padding: 0px 20px;
- }
+
+  .container {
+    padding: 0px 20px;
+  }
 }
 
 // Mobile

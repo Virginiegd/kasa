@@ -24,7 +24,7 @@ function Appartment() {
         <Footer />
       </div>
     )
-      
+
   } else {
     return (
       <div>

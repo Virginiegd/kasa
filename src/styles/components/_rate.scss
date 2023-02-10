@@ -1,29 +1,44 @@
 // Rate
 
 .star__container {
-    margin: 10px;
-.color {
-    color: $color-primary;
-    font-size: 30px;
+    margin: 10px 0px 10px 0px;
+    min-width: max-content;
+
+    .color {
+        color: $color-primary;
+        font-size: 30px;
+    }
+
+    .grey {
+        color: #E3E3E3;
+        font-size: 30px;
+    }
 }
 
-.grey {
-    color:#E3E3E3;
-    font-size: 30px;
-};
-}
+// Tablette 
+@media screen and (max-width:1236px) {
+    .star__container {
+        float: right;
 
+        .color {
+            font-size: 20px;
+        }
+
+        .grey {
+            font-size: 20px;
+        }
+    }
+}
 
 // Mobile
 @media screen and (max-width:768px) {
     .star__container {
-        margin: 10px 0px 0px 0px;
         .color {
             font-size: 15px;
         }
+
         .grey {
-            color:#E3E3E3;
             font-size: 15px;
-        };
+        }
     }
 }

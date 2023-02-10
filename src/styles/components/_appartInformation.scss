@@ -1,12 +1,13 @@
 // Information appartement
 
 .appart__container {
+    overflow: hidden;
+
     .info__container {
         display: flex;
         justify-content: space-between;
 
         .appart__info {
-            height: 64px;
             margin-top: 10px;
 
             h1 {
@@ -20,7 +21,8 @@
             p {
                 color: $color-primary;
                 font-weight: $font-500;
-                margin-top: 0;
+                margin-top: 5px;
+                margin-bottom: 10px;
             }
 
             .appart__tag {
@@ -35,6 +37,7 @@
                     border-radius: 10px;
                     margin-right: 15px;
                     font-size: 14px;
+                    min-width: max-content;
                 }
             }
         }
@@ -44,22 +47,24 @@
 
             .appart__plus {
                 display: flex;
+                align-items: center;
 
                 p {
-                    margin-bottom: 0px;
+                    margin-right: 20px;
                     width: min-content;
                     text-align: right;
-                    margin-right: 20px;
                     padding-left: 25px;
                     color: $color-primary;
                     font-weight: $font-500;
                 }
 
                 div {
+                    height: 64px;
+
                     img {
                         border-radius: 65px;
                         height: 64px;
-                        margin-top: 10px;
+                        min-width: min-content;
                     }
                 }
             }
@@ -67,6 +72,8 @@
     }
 
     .appart__description {
+        margin-top: 0px;
+
         ul {
             display: flex;
             justify-content: space-between;
@@ -82,8 +89,9 @@
                 .accordion__content {
                     font-size: 18px;
                     margin-top: 0px;
+
                     p {
-                        margin:0px;
+                        margin: 0px;
                     }
                 }
             }
@@ -91,6 +99,32 @@
     }
 }
 
+
+// Tablette
+@media screen and (max-width:1236px) {
+    .appart__container {
+        .info__container {
+            .appart__info {
+                h1 {
+                    font-size: 26px;
+                }
+
+                p {
+                    font-size: 16px;
+                }
+            }
+        }
+
+        .appart__description {
+
+            ul {
+                .accordion__contend {
+                    margin: 15px 0px 15px 0px;
+                }
+            }
+        }
+    }
+}
 
 // Mobile
 @media screen and (max-width:768px) {
@@ -105,10 +139,6 @@
                     font-size: 18px;
                 }
 
-                p {
-                    font-size: 14px;
-                }
-
                 .appart__tag {
 
                     li {
@@ -121,25 +151,19 @@
                 display: flex;
                 flex-direction: row-reverse;
                 justify-content: space-between;
-                padding-top: 20px;
+                align-items: center;
 
                 .appart__plus {
-                    display: flex;
 
                     p {
-                        margin-bottom: 0px;
-                        width: min-content;
-                        text-align: right;
-                        margin-right: 20px;
-                        padding-left: 25px;
                         font-size: 12px;
                     }
 
                     div {
+                        height: 32px;
+
                         img {
-                            border-radius: 65px;
                             height: 32px;
-                            margin-top: 10px;
                         }
                     }
                 }

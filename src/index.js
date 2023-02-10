@@ -17,7 +17,7 @@ root.render(
         < Route exact path="/" element={<Home />} />
         < Route path="/about" element={<About />} />
         {/*/:id permettra par la suite de récupérer directement l'id de l'appartement*/}
-        < Route path="/appartment/:id" element={<Appartment />} /> 
+        < Route path="/appartment/:id" element={<Appartment />} />
         < Route path="*" element={<Error404 />} />
       </Routes>
     </BrowserRouter>

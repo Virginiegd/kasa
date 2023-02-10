@@ -8,6 +8,7 @@ const Rate = ({rating}) => {
     const stars= [1, 2, 3, 4, 5]
     return(
         <div className='star__container'>
+            {/*La méthode toString() renvoie une chaine de caractères représentant l'objet renseigné.*/}
             {stars.map((star) => 
             rating >= star ? (
                 <span key={star.toString()} className="color" >{element}</span>
