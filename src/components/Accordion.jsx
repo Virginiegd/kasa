@@ -6,7 +6,7 @@ import { faAngleDown } from '@fortawesome/free-solid-svg-icons'
  * Collapse fermé par défaut
  * Au clique, ouverture du collapse*/
 
-const Accordion = ({ heading, content }) => {
+function Accordion({ heading, content }) {
   const [isActive, setIsActive] = useState(false)
   const element = <FontAwesomeIcon icon={faAngleDown} />
 
