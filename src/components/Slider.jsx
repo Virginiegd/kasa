@@ -28,6 +28,9 @@ function Slider({ slides }) {
         return (
             <div className='container__slider'>
                 {slides[currentIndex]}
+                <div className='slider__counter'>
+                    <p>{currentIndex + 1}/{slides.length}</p>
+                </div>
             </div>
         )
 

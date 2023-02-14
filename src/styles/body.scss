@@ -57,18 +57,9 @@ $font-500: 500;
 }
 
 
-// Tablette 
+// Tablette et Mobile
 
 @media screen and (max-width: 1236px) {
-
-  .container {
-    padding: 0px 20px;
-  }
-}
-
-// Mobile
-
-@media screen and (max-width:768px) {
 
   .container {
     padding: 0px 20px;
