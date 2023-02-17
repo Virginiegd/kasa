@@ -1,4 +1,5 @@
 // Banner page Home
+
 .banner__contend {
     display: flex;
     justify-content: center;
@@ -13,6 +14,7 @@
 }
 
 // Tablette 
+
 @media screen and (max-width: 1236px) {
     .banner__contend {
         height: 150px;
@@ -25,6 +27,7 @@
 }
 
 // Mobile
+
 @media screen and (max-width:768px) {
     .banner__contend {
         height: 111px;

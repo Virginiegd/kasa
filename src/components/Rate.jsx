@@ -6,6 +6,7 @@ import { faStar } from '@fortawesome/free-solid-svg-icons'
 function Rate({ rating }) {
     const element = <FontAwesomeIcon icon={faStar} />
     const stars = [1, 2, 3, 4, 5]
+
     return (
         <div className='star__container'>
             {/*La méthode toString() renvoie une chaine de caractères représentant l'objet renseigné.*/}
